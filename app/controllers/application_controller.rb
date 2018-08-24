@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/recipes' do
-
+    @recipes = Recipe.new(params)
   end
 
 
